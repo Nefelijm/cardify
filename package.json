@@ -1,0 +1,22 @@
+{
+  "name": "cardify",
+  "version": "1.0.0",
+  "description": "* **Track:** _Common Core_\r * **Curso:** _JS Deep Dive: Crea tu propia librería usando JavaScript_\r * **Unidad:** _Producto final_",
+  "main": "index.js",
+  "scripts": {
+    "build": "babel src -d lib"
+  },
+  "repository": {
+    "type": "git",
+    "url": "Nefeli y Andrea"
+  },
+  "keywords": [
+    "Cardify"
+  ],
+  "author": "Nefeli y Andrea",
+  "license": "ISC",
+  "devDependencies": {
+    "babel-cli": "^6.26.0",
+    "babel-preset-env": "^1.6.1"
+  }
+}
