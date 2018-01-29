@@ -4,15 +4,12 @@
   "description": "* **Track:** _Common Core_\r * **Curso:** _JS Deep Dive: Crea tu propia librería usando JavaScript_\r * **Unidad:** _Producto final_",
   "main": "index.js",
   "scripts": {
-    "build": "babel src -d lib"
+    "build": "babel --presets env src -d lib"
   },
   "repository": {
     "type": "git",
     "url": "https://github.com/Nefelijm/cardify.git"
   },
-  "keywords": [
-    "Cardify"
-  ],
   "author": "Nefeli y Andrea",
   "license": "ISC",
   "devDependencies": {
