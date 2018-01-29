@@ -31,13 +31,23 @@ $('.example-container').cardify();
 ________________________________________________________________________________________________
 2.Al llamar la funcion cardify automaticamente empieza a ejecutar el siguiente codigo
 ```js
-$.fn.cardify = function() {
+(function($) {
+  $.fn.cardify = function() {
     $(this).find('img').each(function() {
-      $(this).wrap('<figure></figure>');
-      console.log('holi');
-      $(this).parent().append('holi');
-      $('figcaption').text('holi');
+      $('img').css({ 'width': '150px',
+        'heigth': '20px' });
+      $(this).wrap('<figure></figure>').css({'margin-top': '10%',
+        'margin-left': '10%',
+        'box-shadow': '10px 10px white, -10px -10px rgb(132, 175, 155), 0px 0px 40px 10px yellow', 
+        'border': '3px solid' });
+      $(this).parent().append($('<figcaption></figcaption>'));
+      $(this).next().text($(this).attr('alt')).css({ 'color': 'black',
+        'font-size': '30px',
+        'margin-left': '10%',
+        'margin-top': '3%'});
     });
+  };
+})(jQuery);
 ```
 3.Se mostrara las siguientes imagenes rellenadas en el contenedor
 
