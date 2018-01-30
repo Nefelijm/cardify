@@ -1,3 +1,5 @@
+'use strict';
+
 (function($) {
   $.fn.cardify = function() {
     // Estilos del contenedor
@@ -10,7 +12,7 @@
     });
 
     // Iterar entre imágenes
-    $(this).find('img').each(function() { 
+    $(this).find('img').each(function() {
       // Creando elementos
       $(this).wrap('<figure></figure>');
       $(this).parent().append($('<figcaption></figcaption>').text($(this).attr('alt')));
@@ -50,8 +52,7 @@
       $(this).parent().hover(function() {
         $(this).children(':first').css('opacity', '0');
         $(this).children(':last').css('opacity', '1');
-      },
-      function() {
+      }, function() {
         $(this).children(':first').css('opacity', '1');
         $(this).children(':last').css('opacity', '0');
       });
