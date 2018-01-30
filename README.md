@@ -51,16 +51,16 @@ ________________________________________________________________________________
 ```
 3.Se mostrara las siguientes imagenes rellenadas en el contenedor
 
-![recursos](assets/img/img1.png)
+![recursos](assets/docs/img1.png)
 ________________________________________________________________________________________________
 
-![recursos](assets/img/img2.png)
+![recursos](assets/docs/img2.png)
 ________________________________________________________________________________________________
 
-![recursos](assets/img/img3.png)
+![recursos](assets/docs/img3.png)
 ________________________________________________________________________________________________
 
-**Puedes ir agregando Muchas imagenes mas**
+**Puedes ir agregando muchas imágenes mas**
 
 
 ## Ejemplos
