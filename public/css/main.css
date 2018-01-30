@@ -1,0 +1,13 @@
+*{
+margin:0;
+padding: 0;
+box-sizing: border-box;
+}
+header {
+ background-color: #deceec;
+ height: 80px;
+}
+footer{
+ background-color: #deceec;
+ height: 150px;
+}
