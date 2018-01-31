@@ -5,25 +5,28 @@
     // Iterar entre imágenes
     $(this).find('img').each((index, image) => {
       // Creando elementos
-      // console.log(image);
       $(image).wrap('<figure></figure>');
       $(image).parent().append($('<figcaption></figcaption>').text($(image).attr('alt')));
 
       // Agregando estilos a la imagen
-      $(this).addClass('cardifyImage');
+      $(image).addClass('cardifyImage');
       // Agregando estilos al figure
-      $(this).parent().addClass('cardifyFigure');
+      $(image).parent().addClass('cardifyFigure');
       // Agregando estilos al Figcaption
-      $(this).next().addClass('cardifyFigcaption');
-      
+      $(image).next().addClass('cardifyFigcaption');
+
       // Agregando efecto hover
-      $(image).parent().hover(function() {
-        $(this).children(':first').css('opacity', '0');
-        $(this).children(':last').css('opacity', '1');
-      }, function() {
-        $(this).children(':first').css('opacity', '1');
-        $(this).children(':last').css('opacity', '0');
-      });
+      // $(image).parent().hover(function(event) {
+      //   if ($(event.target).is('figure') || $(event.target).parents('figure')) {
+      //     $(this).find('img').css('opacity', '0');
+      //     $(this).find('figcaption').css('display', 'block');
+      //   }
+      // }, function(event) {
+      //   if ($(event.target).is('figure') || $(event.target).parents('figure')) {
+      //     $(this).find('img').css('opacity', '1');
+      //     $(this).find('figcaption').css('display', 'none');
+      //   }
+      // });
     });
   };
 })(jQuery);
