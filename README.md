@@ -14,11 +14,11 @@
 ```html
  <section class="example-container">
     <h2>Prueba Cardify</h2>
-    <img src="http://markimarta.com/wp-content/uploads/2016/08/jquery-logo1.png" alt="jquery">
-    <img src="https://raw.githubusercontent.com/isocpp/logos/master/cpp_logo.png" alt="c++">
-    <img src="http://www.w3.org/html/logo/downloads/HTML5_Logo_256.png" alt="html5">
-    <img src="https://angular.io/assets/images/logos/angularjs/AngularJS-Shield.svg" alt="Angular">
-    <img src="https://nodejs.org/static/images/logos/nodejs-new-pantone-black.png" alt="node.js">
+  <img src="http://markimarta.com/wp-content/uploads/2016/08/jquery-logo1.png" alt="jquery">
+  <img src="https://raw.githubusercontent.com/isocpp/logos/master/cpp_logo.png" alt="c++">
+  <img src="http://www.w3.org/html/logo/downloads/HTML5_Logo_256.png" alt="html5">
+  <img src="https://angular.io/assets/images/logos/angularjs/AngularJS-Shield.svg" alt="Angular">
+   <img src="https://nodejs.org/static/images/logos/nodejs-new-pantone-black.png" alt="node.js">
   </section>
 ```
 
