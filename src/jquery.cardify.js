@@ -10,19 +10,20 @@
     });
 
     // Iterar entre imágenes
-    $(this).find('img').each(function() { 
+    $(this).find('img').each((index, image) => {
       // Creando elementos
-      $(this).wrap('<figure></figure>');
-      $(this).parent().append($('<figcaption></figcaption>').text($(this).attr('alt')));
+      // console.log(image);
+      $(image).wrap('<figure></figure>');
+      $(image).parent().append($('<figcaption></figcaption>').text($(image).attr('alt')));
 
       // Agregando estilos
-      $(this).css({
+      $(image).css({
         'width': '100%',
         'opacity': '1',
         'transition': 'opacity .5s'
       });
 
-      $(this).parent().css({
+      $(image).parent().css({
         'align-items': 'center',
         'box-shadow': '#FBFCFA 10px 10px, #34D1BF -10px -10px, #CFDBD5 -5px 5px 30px 10px',
         'border': '3px solid',
@@ -35,8 +36,8 @@
         'width': '25%'
       });
 
-      $(this).next().css({
-        'font-size': '1.5em',
+      $(image).next().css({
+        'font-size': '1em',
         'line-height': '1.2',
         'opacity': '0',
         'padding': '5%',
@@ -45,13 +46,13 @@
         'transition': 'opacity .5s',
         'width': '90%'
       });
+      // Fin de estilos
 
       // Agregando efecto hover
-      $(this).parent().hover(function() {
+      $(image).parent().hover(function() {
         $(this).children(':first').css('opacity', '0');
         $(this).children(':last').css('opacity', '1');
-      },
-      function() {
+      }, function() {
         $(this).children(':first').css('opacity', '1');
         $(this).children(':last').css('opacity', '0');
       });
