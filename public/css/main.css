@@ -29,6 +29,13 @@ pre {
     word-wrap: normal;
     overflow-x: auto;
     line-height: 24px;
-    background-color: rgba(93, 88, 93, 0.03);
+    background-color: rgba(223, 223, 76, 0.03);
     font-weight: 100;
+}
+.target{
+    text-align: justify; 
+    font-family: 'Bungee', cursive;
+    height: 300px; 
+     box-shadow : #D8DAD5 5px 5px, rgb(209, 52, 162) -5px -5px, rgb(240, 175, 215) -5px 5px 30px 10px;
+    margin: 3%;
 }
