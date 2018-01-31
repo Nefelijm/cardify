@@ -3,11 +3,11 @@ margin:0;
 padding: 0;
 box-sizing: border-box;
 }
-.icon{
+#icon{
  width: 35px;
  height: 45px;
  margin-top: 5%;
- margin-left: 55%;
+ margin-left: 5%;
 }
 header {
  background-color: #deceec;
