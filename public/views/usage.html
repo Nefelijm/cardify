@@ -52,13 +52,14 @@
 			<p>
 				<h3>¿Como se debe linkear?</h3>
 				<div>
-					Para compilar el CSS
-				
-					<link rel="stylesheet" href="css/jquery.cardify.css">
+
+					Para compilar en el CSS
+					<pre><code>rel="stylesheet" href="css/jquery.cardify.css"
+					</code></pre>
 					
 					Para compilar el JS
-
-					<script src="js/jquery.cardify.js"></script>
+					<pre><code>  src="js/jquery.cardify.js""
+					</code></pre>
 
 				</div>
 				
@@ -70,8 +71,7 @@
 			<div>
 				<h3>¿Como se debe llamar en el js?</h3>
 					<pre><code>$(document).ready(function(){ $('.example-container').cardify();});
-					</code></pre>
-			<button style="background-color:rgb(209, 39, 70); ">leer mas...</button>
+					</code></pre>		
 		
 		</div>
 	</section>	
@@ -81,17 +81,18 @@
 				<h3 class="text-center">Estructura</h3>
 				<div>
 					 <p> A traves de una funcion cardify llamaremos a nuestro plugin </p>					  
-					  //example-container es el selector del contenedor 					  
-					  $('.example-container').cardify();
+						//example-container es el selector del contenedor 
+						<pre><code>$('.example-container').cardify();
+						</code></pre>
+					
 					<p> Al llamar la funcion cardify automaticamente empieza a ejecutar el siguiente codigo </p>
-					 (function($) { $.fn.cardify = function() { // Agregando estilos al contenedor $(this).addClass('cardifyContainer'); // Iterar
-					entre imágenes $('img').each((index, image) => { // Creando elementos $(image).wrap('
-					<figure></figure>'); $(image).parent().append($('
-					<figcaption></figcaption>').text($(image).attr('alt'))); // Agregando estilos a la imagen $(image).addClass('cardifyImage'); // Agregando
-					estilos al figure $(image).parent().addClass('cardifyFigure'); // Agregando estilos al Figcaption $(image).next().addClass('cardifyFigcaption');
-					}); }; })(jQuery);
-				</div>
-	
+						<pre><code>(function($) { $.fn.cardify = function() { // Agregando estilos al contenedor $(this).addClass('cardifyContainer'); // Iterar
+						entre imágenes $('img').each((index, image) => { // Creando elementos $(image).wrap('
+						<figure></figure>'); $(image).parent().append($('
+						<figcaption></figcaption>').text($(image).attr('alt'))); // Agregando estilos a la imagen $(image).addClass('cardifyImage'); // Agregando
+						estilos al figure $(image).parent().addClass('cardifyFigure'); // Agregando estilos al Figcaption $(image).next().addClass('cardifyFigcaption');
+						}); }; })(jQuery);	</code></pre>		
+		   	</div>	
 			</div>
 		</div>
 	</section>
