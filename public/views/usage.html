@@ -23,7 +23,7 @@
 							<a class="nav-link" href="../views/usage.html">USO</a>
 						</li>
 						<li class="nav-item">
-							<a class="nav-link" href="https://github.com/Nefelijm/cardify">GITHUB</a>
+							<a class="nav-link" href="https://github.com/Nefelijm/cardify" target="_blank">GITHUB</a>
 						</li>
 					</ul>
 				</div>
@@ -35,34 +35,67 @@
 			</div>
 		</div>
 	</header>
-	<section>
-		<div class="row">
-			<div class="col-xs-12 col-sm-12 col-md-12">
-        <span>¿Que Archivos se deben usar?</span>
+	<section class="row">
+		<div class="col-xs-4 col-sm-4 col-md-4 ">
+			
+			<div>
+				<h3>¿Que Archivos se deben usar?</h3>
+				<div>
+					Los Archivos que hay que tener en cuentas son:					
+					<div><code>jquery.cardify.css</code></div> 
+					<div><code>jquery.cardify.css</code></div>
+				</div>
+			</div>
+			<button style="background-color:rgb(209, 39, 70); ">leer mas...</button>
+		
+		</div>
+		<div class="col-xs-4 col-sm-4 col-md-4">
+			<p>
+				<h3>¿Como se debe linkear?</h3>
+				<div>
+					Para compilar el CSS
+				
+					<link rel="stylesheet" href="css/jquery.cardify.css">
+					
+					Para compilar el JS
 
-			</div>
+					<script src="js/jquery.cardify.js"></script>
+
+				</div>
+				
+			</p>
+			<button style="background-color:rgb(209, 39, 70); ">leer mas...</button>
+		
 		</div>
-	</section>
+		<div class="col-xs-4 col-sm-4 col-md-4">
+			<div>
+				<h3>¿Como se debe llamar en el js?</h3>
+				  <div>
+					$(document).ready(function() {
+						 $('.example-container').cardify();
+					 });
+				  </div>
+				</div>
+			<button style="background-color:rgb(209, 39, 70); ">leer mas...</button>
+		
+		</div>
+	</section>	
 	<section>
 		<div class="row">
 			<div class="col-xs-12 col-sm-12 col-md-12">
-				<span>¿Como se debe linkear?</span>
-	
-			</div>
-		</div>
-	</section>
-	<section>
-		<div class="row">
-			<div class="col-xs-12 col-sm-12 col-md-12">
-				<span>¿Como se debe llamar en el js?</span>
-	
-			</div>
-		</div>
-	</section>
-	<section>
-		<div class="row">
-			<div class="col-xs-12 col-sm-12 col-md-12">
-				<span>Estructura</span>
+				<h3 class="text-center">Estructura</h3>
+				<div>
+					 <p> A traves de una funcion cardify llamaremos a nuestro plugin </p>					  
+					  //example-container es el selector del contenedor 					  
+					  $('.example-container').cardify();
+					<p> Al llamar la funcion cardify automaticamente empieza a ejecutar el siguiente codigo </p>
+					 (function($) { $.fn.cardify = function() { // Agregando estilos al contenedor $(this).addClass('cardifyContainer'); // Iterar
+					entre imágenes $('img').each((index, image) => { // Creando elementos $(image).wrap('
+					<figure></figure>'); $(image).parent().append($('
+					<figcaption></figcaption>').text($(image).attr('alt'))); // Agregando estilos a la imagen $(image).addClass('cardifyImage'); // Agregando
+					estilos al figure $(image).parent().addClass('cardifyFigure'); // Agregando estilos al Figcaption $(image).next().addClass('cardifyFigcaption');
+					}); }; })(jQuery);
+				</div>
 	
 			</div>
 		</div>
