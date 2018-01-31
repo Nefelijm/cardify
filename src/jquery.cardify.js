@@ -3,7 +3,7 @@
     // Agregando estilos al contenedor
     $(this).addClass('cardifyContainer');
     // Iterar entre imágenes
-    $(this).find('img').each((index, image) => {
+    $('img').each((index, image) => {
       // Creando elementos
       $(image).wrap('<figure></figure>');
       $(image).parent().append($('<figcaption></figcaption>').text($(image).attr('alt')));
