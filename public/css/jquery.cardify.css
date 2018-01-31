@@ -12,6 +12,7 @@
 /* Estilos del figure */
 .cardifyFigure{
   align-items: center;
+  background-color: #f7f7f7;
   box-shadow : #D8DAD5 10px 10px, #34D1BF -10px -10px, #CFDBD5 -5px 5px 30px 10px;
   border-radius: 5px;
   display: flex;
