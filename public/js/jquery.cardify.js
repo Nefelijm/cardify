@@ -1,11 +1,11 @@
 'use strict';
 
-(function($) {
-  $.fn.cardify = function() {
+(function ($) {
+  $.fn.cardify = function () {
     // Agregando estilos al contenedor
     $(this).addClass('cardifyContainer');
     // Iterar entre imágenes
-    $(this).find('img').each(function(index, image) {
+    $(this).find('img').each(function (index, image) {
       // Creando elementos
       $(image).wrap('<figure></figure>');
       $(image).parent().append($('<figcaption></figcaption>').text($(image).attr('alt')));

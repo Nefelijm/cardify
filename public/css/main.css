@@ -2,17 +2,6 @@
   font-family: 'Nunito', sans-serif;
 }
 
-.hero{
-  background-color: #EF7B45;
-  color: #fff;
-  padding: 30px 0;
-}
-
-footer{
-background-color: #deceec;
-height: 150px;
-}
-
 pre {
   border: 1px solid rgba(15, 15, 15, 0.2);
   border-radius: 4px;
@@ -28,10 +17,20 @@ pre {
   font-weight: 100;
 }
 
+.hero{
+  background-color: #EF7B45;
+  color: #fff;
+  padding: 30px 0;
+}
+
 .target{
   text-align: justify; 
   font-family: 'Nunito', sans-serif;
   border: 1px solid black;   
   margin: 3%;
-  background-color: white;    
+  background-color: rgb(240, 221, 206);    
+}
+
+.second-title {
+  color: #042A2B;
 }
