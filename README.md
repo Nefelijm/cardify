@@ -99,3 +99,4 @@ La estructura HTML del contenedor quedará de la siguiente manera.
 
 ![](public/assets/docs/cardify-home.png)
 
+![](public/assets/docs/cardify-uso.png)
