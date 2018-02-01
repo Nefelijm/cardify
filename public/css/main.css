@@ -3,9 +3,7 @@
 }
 
 pre.prettyprint {
-  /* border: 5px solid rgba(5, 3, 151, 0.2); */
   border-radius: 4px;
-  /* color: rgb(15, 13, 13); */
   font-family: initial;
   background-color: #f4f4f4;
   padding: 5px !important;
@@ -14,7 +12,6 @@ pre.prettyprint {
 .hero{
   background-color: #EF7B45;
   color: #fff;
-  padding: 30px 0;
 }
 
 .target{
