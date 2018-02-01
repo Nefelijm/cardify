@@ -8,6 +8,8 @@ Para el desarrollo de este plugin, nos organizamos mediante la herramienta **Tre
 
 ![](public/assets/docs/trello.png)
 
+[Ir a board de Trello](https://trello.com/b/v9PCgmS2/reto-jquery-plugin-cardify)
+
 ## Guía de uso
 
 ### Instalación
@@ -93,6 +95,7 @@ La estructura HTML del contenedor quedará de la siguiente manera.
 </section>
 ```
 
-## Ejemplo
+## [Demo Cardify](https://nefelijm.github.io/cardify/public/)
 
-El resultado de la implementación de **Cardify** se vería de esta forma.
+![](public/assets/docs/cardify-home.png)
+
