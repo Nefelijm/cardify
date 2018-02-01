@@ -24,12 +24,14 @@ pre {
 }
 
 .target{
-  text-align: justify; 
-  font-family: 'Nunito', sans-serif;
-  border: 1px solid rgb(4, 42, 43);
-  box-shadow : rgb(4, 42, 43) 5px 5px,  rgb(253, 253, 253) -5px -5px, rgba(17, 145, 196, 0.507) -5px 5px 20px 10px;   
-  margin: 3%;
-  height: 250px;   
+  border: 2px solid #34D1BF;
+  box-shadow : rgba(216, 216, 216, 0.7) -5px 5px 25px 2px;
+  border-radius: 5px;
+  height: 100%;
+}
+
+.first-title {
+  color: #EF7B45;
 }
 
 .second-title {
@@ -41,10 +43,7 @@ pre {
   color: #fff;
 }
 .structure{
-  margin-top: 5%;
-  text-align: justify; 
-  font-family: 'Nunito', sans-serif;
-  border: 1px solid #EF7B45;
-  box-shadow : #EF7B45 5px 5px,  rgb(253, 253, 253) -5px -5px, rgb(216, 71, 39) -5px 5px 20px 10px;    
-  margin: 1%  ; 
+  border: 2px solid #EF7B45;
+  border-radius: 5px;
+  box-shadow : rgba(216, 216, 216, 0.7) -5px 5px 25px 2px;
 }
