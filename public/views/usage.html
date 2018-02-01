@@ -29,77 +29,75 @@
 				</div>
 				<div class="col-xs-3 col-sm-3 col-md-3">
 					<a href="">
-						<img src="../assets/images/cardify-icon.svg" id="icon" alt="icon">
+						<img src="../assets/images/cardify-icon.svg" alt="icon" class="icon">
 					</a>
 				</div>
 			</div>
 		</div>
 	</header>
-	<section class="row">
-		<div class="col-xs-3 col-sm-3 col-md-3 target">
-			
-			<div>
-				<h3>¿Que Archivos se deben usar?</h3>
-				<div>
-					Los Archivos que hay que tener en cuentas son:					
-					<pre class="text-center"><code>jquery.cardify.css</code></pre> 
-					<pre  class="text-center"><code>jquery.cardify.js</code></pre>
+	<section>
+		<div class="container">
+			<div class="row">
+				<div class="col-xs-3 col-sm-3 col-md-3 target">
+					<div>
+						<h3>¿Que Archivos se deben usar?</h3>
+						<div>
+							Los Archivos que hay que tener en cuentas son:
+							<pre class="text-center"><code>jquery.cardify.css</code></pre>
+							<pre class="text-center"><code>jquery.cardify.js</code></pre>
+						</div>
+					</div>				
 				</div>
-			</div>			
-		
-		</div>
-		<div class="col-xs-3 col-sm-3 col-md-3 target">
-			<p>
-				<h3>¿Como se debe linkear?</h3>
-				<div>
-
-					Para compilar en el CSS
-					<pre><code>rel="stylesheet" href="css/jquery.cardify.css"
-					</code></pre>
-					
-					Para compilar el JS
-					<pre><code>  src="js/jquery.cardify.js""
-					</code></pre>
-
-				</div>
+				<div class="col-xs-3 col-sm-3 col-md-3 target">
+					<p>
+						<h3>¿Como se debe linkear?</h3>
+						<div>
 				
-			</p>
-			
-		
+							Para compilar en el CSS
+							<pre><code>rel="stylesheet" href="css/jquery.cardify.css"
+									</code></pre> Para compilar el JS
+							<pre><code>  src="js/jquery.cardify.js""
+									</code></pre>
+				
+						</div>
+				
+					</p>
+				
+				
+				</div>
+				<div class="col-xs-3 col-sm-3 col-md-3 target">
+					<div>
+						<h3>¿Como se debe llamar en el js?</h3>
+						<pre><code>$(document).ready(function(){ $('.example-container').cardify();});
+									</code></pre>
+				
+					</div>
+			  </div>
 		</div>
-		<div class="col-xs-3 col-sm-3 col-md-3 target">
-			<div>
-				<h3>¿Como se debe llamar en el js?</h3>
-					<pre><code>$(document).ready(function(){ $('.example-container').cardify();});
-					</code></pre>		
-		
-		</div>
+	</div>
 	</section>	
 	<section>
-		<div class="row">
-			<div class="col-xs-12 col-sm-12 col-md-12">
-				<h3 class="text-center">Estructura</h3>
-				<div>
-					 <p> A traves de una funcion cardify llamaremos a nuestro plugin <br>
-							 example-container es el selector del contenedor
-						</p>					  
-						
-						<pre><code>$('.example-container').cardify();</code></pre>
-					
-					<p> Al llamar la funcion cardify automaticamente empieza a ejecutar el siguiente codigo </p>
-						<pre><code>
-							(function($){ $.fn.cardify = function()
-								 { // Agregando estilos al contenedor $(this).addClass('cardifyContainer'); 
-								  // Iterar entre imágenes $('img').each((index, image) => { 
-								  // Creando elementos $(image).wrap('<figure></figure>');
-								  	$(image).parent().append($('<figcaption></figcaption>').text($(image).attr('alt'))); 
-								  // Agregando estilos a la imagen $(image).addClass('cardifyImage'); 
-								  // Agregando estilos al figure $(image).parent().addClass('cardifyFigure');								
-						  	  // Agregando estilos al Figcaption $(image).next().addClass('cardifyFigcaption');	
-						    }); 
-					    }; 
-				    })(jQuery);	</code></pre>		
-		   	</div>	
+		<div class="container">
+			<div class="row">
+				<div class="col-xs-12 col-sm-12 col-md-12">
+					<h3 class="text-center">Estructura</h3>
+					<div>
+						<p> A traves de una funcion cardify llamaremos a nuestro plugin
+							<br> example-container es el selector del contenedor
+						</p>
+			
+						<pre>
+										<code>
+											<img src="../assets/images/code1.png" alt="code1">						
+										</code>
+									</pre>
+			
+						<p> Al llamar la funcion cardify automaticamente empieza a ejecutar el siguiente codigo </p>
+						<pre class="language-javascript"><code>
+									<img src="../assets/images/code.png" alt="code">						
+									</code></pre>
+					</div>
+				</div>
 			</div>
 		</div>
 	</section>
@@ -107,7 +105,7 @@
 		<div class="container-fluid">
 			<div class="row">
 				<div class="col-xs-12 col-md-12">
-					<p>Cardify</p>
+					<p>© 2018Cardify</p>
 				</div>
 			</div>
 		</div>

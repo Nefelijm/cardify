@@ -3,9 +3,9 @@ margin:0;
 padding: 0;
 box-sizing: border-box;
 }
-#icon{
- width: 25px;
- height: 20px;
+.icon{
+ width: 80px;
+ height: 40px;
  margin-top: 5%;
  margin-left: 5%;
 }
@@ -34,8 +34,9 @@ pre {
 }
 .target{
     text-align: justify; 
-    font-family: 'Bungee', cursive;
-    height: 300px; 
-     box-shadow : #D8DAD5 5px 5px, rgb(209, 52, 162) -5px -5px, rgb(240, 175, 215) -5px 5px 30px 10px;
+    font-family: 'Gill Sans', sans-serif;
+    height: 350px;
+    border: 1px solid black;   
     margin: 3%;
+    background-color: rgb(240, 221, 206);    
 }
