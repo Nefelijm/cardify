@@ -32,17 +32,18 @@
 					</li>
 				</ul>
 				<ul class="navbar-nav ml-auto">
-					<button class="btn btn-outline-dark my-2 my-sm-0 btn-sm">
+					<button id="btn-github" class="btn btn-outline-dark my-2 my-sm-0 btn-sm">
 						<i class="fab fa-github"></i> Github</button>
 				</ul>
 			</div>
 		</nav>
 	</header>
+	<!-- Contenido de la pagina -->
 	<main>
 		<section>
 			<div class="container">
-				<div class="row">
-					<div class="col-xs-3 col-sm-3 col-md-3 target">
+				<div class="row align-items-start">
+					<div class="col-xs-3 col-sm-3 col-md-3  target">
 						<div>
 							<h3>¿Que Archivos se deben usar?</h3>
 							<div>
@@ -56,27 +57,15 @@
 							<h3>¿Como se debe linkear?</h3>
 							<div>
 								Para compilar en el CSS
-								<pre>
-									<code>
-										rel="stylesheet" href="css/jquery.cardify.css"
-									</code>
-								</pre> 								
+								<pre><code>rel="stylesheet" href="css/jquery.cardify.css"</code></pre> 								
 								Para compilar el JS
-								<pre>
-									<code>  
-										src="js/jquery.cardify.js""
-									</code>
-								</pre>
+								<pre><code>  src="js/jquery.cardify.js" </code></pre>
 							</div>
 					</div>
 					<div class="col-xs-3 col-sm-3 col-md-3 target">
 						<div>
 							<h3>¿Como se debe llamar en el js?</h3>
-							<pre>
-								<code>
-									$(document).ready(function(){ $('.example-container').cardify();});
-								</code>
-							</pre>
+							<pre><code>$(document).ready(function(){ $('.example-container').cardify();});</code></pre>
 						</div>
 					</div>
 				</div>
@@ -84,28 +73,26 @@
 		</section>
 		<section>
 			<div class="container">
-				<div class="row">
-					<div class="col-xs-12 col-sm-12 col-md-12">
+				<div class="row mt-5">
+					<div class="col-12 structure">
 						<h3 class="text-center">Estructura</h3>
 						<div>
 							<p> A traves de una funcion cardify llamaremos a nuestro plugin <br> 
 								  example-container es el selector del contenedor
-							</p>
-							<pre>
-								<code>
-									<img src="../assets/images/code1.png" alt="code1">						
-								</code>
-							</pre>
-							<p> Al llamar la funcion cardify automaticamente empieza a ejecutar el siguiente codigo </p>
-							<pre class="language-javascript">
-								<code>
-									<img src="../assets/images/code.png" alt="code">						
-								</code>
-							</pre>
+							</p>						
+							<img src="../assets/images/code1.png" alt="code1">						
 						</div>
 					</div>
 				</div>
-			</div>
+				<div class="row mt-5">
+					<div class="col-12 structure">						
+						<div>
+							<p>Al llamar la funcion cardify automaticamente empieza a ejecutar el siguiente codigo </p>
+							<img src="../assets/images/code.png" alt="code">
+					  </div>						
+					</div>
+				</div>
+			</div>		
 		</section>
 	</main>
 	<footer class="footer-bg pt-4 mt-4">
@@ -117,6 +104,11 @@
 			</div>
 		</div>
 	</footer>
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script src="../vendors/bootstrap/js/bootstrap.min.js"></script>
+	<script src="../js/app.js"></script>
+	<script src="../js/jquery.cardify.js"></script>
 
 </body>
 

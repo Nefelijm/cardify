@@ -26,9 +26,11 @@ pre {
 .target{
   text-align: justify; 
   font-family: 'Nunito', sans-serif;
-  border: 1px solid black;   
+  border: 1px solid rgb(4, 42, 43);
+  box-shadow : rgb(4, 42, 43) 5px 5px,  rgb(253, 253, 253) -5px -5px, rgba(17, 145, 196, 0.507) -5px 5px 20px 10px;   
   margin: 3%;
-  background-color: rgb(240, 221, 206);    
+  height: 250px; 
+  
 }
 
 .second-title {
@@ -38,4 +40,12 @@ pre {
 .footer-bg {
   background-color: #34D1BF;
   color: #fff;
+}
+.structure{
+  margin-top: 5%;
+  text-align: justify; 
+  font-family: 'Nunito', sans-serif;
+  border: 1px solid #EF7B45;
+  box-shadow : #EF7B45 5px 5px,  rgb(253, 253, 253) -5px -5px, rgb(216, 71, 39) -5px 5px 20px 10px;    
+  margin: 1%  ; 
 }
