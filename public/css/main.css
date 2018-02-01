@@ -30,9 +30,8 @@ pre {
 
 .target{
   text-align: justify; 
-  font-family: 'Gill Sans', sans-serif;
-  height: 350px;
+  font-family: 'Nunito', sans-serif;
   border: 1px solid black;   
   margin: 3%;
-  background-color: rgb(240, 221, 206);    
+  background-color: white;    
 }

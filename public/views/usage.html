@@ -12,95 +12,102 @@
 
 <body>
 	<header>
-		<div class="container ">
-			<div class="row">
-				<div class="col-xs-9 col-sm-9 col-md-9">
-					<ul class="nav ">
-						<li class="nav-item">
-							<a class="nav-link active" href="../index.html">HOME</a>
-						</li>
-						<li class="nav-item">
-							<a class="nav-link" href="../views/usage.html">USO</a>
-						</li>
-						<li class="nav-item">
-							<a class="nav-link" href="https://github.com/Nefelijm/cardify" target="_blank">GITHUB</a>
-						</li>
-					</ul>
-				</div>
-				<div class="col-xs-3 col-sm-3 col-md-3">
-					<a href="">
-						<img src="../assets/images/cardify-icon.svg" alt="icon" class="icon">
-					</a>
-				</div>
+		<nav class="navbar navbar-expand-lg navbar-light bg-light">
+			<a class="navbar-brand" href="#">
+				<img src="../assets/images/cardify-icon.svg" width="30" height="30" class="d-inline-block align-top" alt="icon">
+			</a>
+			<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false"
+			 aria-label="Toggle navigation">
+				<span class="navbar-toggler-icon"></span>
+			</button>
+			<div class="collapse navbar-collapse" id="navbarNav">
+				<ul class="navbar-nav">
+					<li class="nav-item active">
+						<a class="nav-link" href="../index.html">Home
+							<span class="sr-only">(current)</span>
+						</a>
+					</li>
+					<li class="nav-item">
+						<a class="nav-link" href="#">Uso</a>
+					</li>
+				</ul>
+				<ul class="navbar-nav ml-auto">
+					<button class="btn btn-outline-dark my-2 my-sm-0 btn-sm">
+						<i class="fab fa-github"></i> Github</button>
+				</ul>
 			</div>
-		</div>
+		</nav>
 	</header>
-	<section>
-		<div class="container">
-			<div class="row">
-				<div class="col-xs-3 col-sm-3 col-md-3 target">
-					<div>
-						<h3>¿Que Archivos se deben usar?</h3>
+	<main>
+		<section>
+			<div class="container">
+				<div class="row">
+					<div class="col-xs-3 col-sm-3 col-md-3 target">
 						<div>
-							Los Archivos que hay que tener en cuentas son:
-							<pre class="text-center"><code>jquery.cardify.css</code></pre>
-							<pre class="text-center"><code>jquery.cardify.js</code></pre>
+							<h3>¿Que Archivos se deben usar?</h3>
+							<div>
+								Los Archivos que hay que tener en cuentas son:
+								<pre class="text-center"><code>jquery.cardify.css</code></pre>
+								<pre class="text-center"><code>jquery.cardify.js</code></pre>
+							</div>
 						</div>
-					</div>				
-				</div>
-				<div class="col-xs-3 col-sm-3 col-md-3 target">
-					<p>
-						<h3>¿Como se debe linkear?</h3>
-						<div>
-				
-							Para compilar en el CSS
-							<pre><code>rel="stylesheet" href="css/jquery.cardify.css"
-									</code></pre> Para compilar el JS
-							<pre><code>  src="js/jquery.cardify.js""
-									</code></pre>
-				
-						</div>
-				
-					</p>
-				
-				
-				</div>
-				<div class="col-xs-3 col-sm-3 col-md-3 target">
-					<div>
-						<h3>¿Como se debe llamar en el js?</h3>
-						<pre><code>$(document).ready(function(){ $('.example-container').cardify();});
-									</code></pre>
-				
 					</div>
-			  </div>
-		</div>
-	</div>
-	</section>	
-	<section>
-		<div class="container">
-			<div class="row">
-				<div class="col-xs-12 col-sm-12 col-md-12">
-					<h3 class="text-center">Estructura</h3>
-					<div>
-						<p> A traves de una funcion cardify llamaremos a nuestro plugin
-							<br> example-container es el selector del contenedor
-						</p>
-			
-						<pre>
-										<code>
-											<img src="../assets/images/code1.png" alt="code1">						
-										</code>
-									</pre>
-			
-						<p> Al llamar la funcion cardify automaticamente empieza a ejecutar el siguiente codigo </p>
-						<pre class="language-javascript"><code>
-									<img src="../assets/images/code.png" alt="code">						
-									</code></pre>
+					<div class="col-xs-3 col-sm-3 col-md-3 target">			
+							<h3>¿Como se debe linkear?</h3>
+							<div>
+								Para compilar en el CSS
+								<pre>
+									<code>
+										rel="stylesheet" href="css/jquery.cardify.css"
+									</code>
+								</pre> 								
+								Para compilar el JS
+								<pre>
+									<code>  
+										src="js/jquery.cardify.js""
+									</code>
+								</pre>
+							</div>
+					</div>
+					<div class="col-xs-3 col-sm-3 col-md-3 target">
+						<div>
+							<h3>¿Como se debe llamar en el js?</h3>
+							<pre>
+								<code>
+									$(document).ready(function(){ $('.example-container').cardify();});
+								</code>
+							</pre>
+						</div>
 					</div>
 				</div>
 			</div>
-		</div>
-	</section>
+		</section>
+		<section>
+			<div class="container">
+				<div class="row">
+					<div class="col-xs-12 col-sm-12 col-md-12">
+						<h3 class="text-center">Estructura</h3>
+						<div>
+							<p> A traves de una funcion cardify llamaremos a nuestro plugin <br> 
+								  example-container es el selector del contenedor
+							</p>
+							<pre>
+								<code>
+									<img src="../assets/images/code1.png" alt="code1">						
+								</code>
+							</pre>
+							<p> Al llamar la funcion cardify automaticamente empieza a ejecutar el siguiente codigo </p>
+							<pre class="language-javascript">
+								<code>
+									<img src="../assets/images/code.png" alt="code">						
+								</code>
+							</pre>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+	</main>
 	<footer>
 		<div class="container-fluid">
 			<div class="row">
