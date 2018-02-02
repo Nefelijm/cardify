@@ -17,7 +17,7 @@
 <body>
 	<!-- Encabezado -->
 	<header>
-		<nav class="navbar navbar-expand-lg navbar-light bg-light">
+		<nav class="navbar navbar-expand-md navbar-light bg-light">
 			<a class="navbar-brand" href="#">
 				<img src="../assets/images/cardify-icon.svg" width="30" height="30" class="d-inline-block align-top" alt="icon">
 			</a>
@@ -37,7 +37,7 @@
 					</li>
 				</ul>
 				<ul class="navbar-nav ml-auto">
-					<button id="btn-github" class="btn btn-outline-dark my-2 my-sm-0 btn-sm">
+					<button id="btn-github" class="btn btn-outline-dark mb-2 my-md-0 btn-sm">
 						<i class="fab fa-github"></i> Github</button>
 				</ul>
 			</div>
@@ -46,10 +46,21 @@
 
 	<!-- Contenido de la pagina -->
 	<main>
+		<section>
+			<div class="container mt-4">
+				<div class="row">
+					<div class="col-12 col-md-10 offset-md-1">
+						<h2 class="first-title">Descarga</h2>
+						<a class="btn btn-cardify-outline" href="../assets/download/download-cardify.rar" download>
+							<i class="fas fa-download"></i> Descarga Cardify</a>
+					</div>
+				</div>
+		</section>
+
 		<section class="container mt-4">
 			<div class="row">
 				<div class="col-12 col-md-10 offset-md-1">
-					<h2 class="first-title">Instalación &sdot; Cardify</h2>
+					<h2 class="first-title">Instalación</h2>
 				</div>
 			</div>
 			<div class="row d-flex flex-row align-items-stretch">
@@ -58,21 +69,21 @@
 						<h3 class="second-title">¿Que archivos se deben usar?</h3>
 						<div>
 							<p>Los archivos que hay que tener en cuenta son:</p>
-							<pre class="text-center"><code>jquery.cardify.css</code></pre>
-							<pre class="text-center"><code>jquery.cardify.js</code></pre>
+							<pre class="prettyprint text-center"><code>jquery.cardify.css</code></pre>
+							<pre class="prettyprint text-center"><code>jquery.cardify.js</code></pre>
 						</div>
 					</div>
 				</div>
-				<div class="col-12 col-md-10 col-lg-5 p-3">
+				<div class="col-12 col-md-10 offset-md-1 col-lg-5 offset-lg-0 p-3">
 					<div class="target bg-light p-3">
 						<h3 class="second-title">¿Cómo incluir los archivos?</h3>
 						<div>
 							<p>Vincular CSS en
 								<code>head</code>:</p>
-							<pre><code>&lt;link rel="stylesheet" href="css/jquery.cardify.css"&gt;</code></pre>
+							<pre class="prettyprint"><code>&lt;link rel="stylesheet" href="css/jquery.cardify.css"&gt;</code></pre>
 							<p>Incluir
 								<code>script</code> que vincule JS:</p>
-							<pre><code>&lt;script src="js/jquery.cardify.js"&gt;&lt;/script&gt;</code></pre>
+							<pre class="prettyprint"><code>&lt;script src="js/jquery.cardify.js"&gt;&lt;/script&gt;</code></pre>
 						</div>
 					</div>
 				</div>
@@ -81,38 +92,10 @@
 						<h3 class="second-title">¿Como invocar Cardify?</h3>
 						<p>
 							<code>.example-container</code> es el contenedor donde se encuentran las imágenes a ser procesadas.</p>
-						<pre><code>$('.example-container').cardify();</code></pre>
+						<pre class="prettyprint"><code>$('.example-container').cardify();</code></pre>
 					</div>
 				</div>
 			</div>
-		</section>
-
-		<section>
-			<div class="container mt-4">
-				<div class="row">
-					<div class="col-12 col-md-10 offset-md-1">
-						<h2 class="first-title">Estructura &sdot; Cardify</h2>
-					</div>
-				</div>
-
-				<div class="row">
-					<div class="col-12 col-md-10 offset-md-1 p-3">
-						<div class="structure p-3">
-							<div>
-								<p> A traves de una funcion cardify llamaremos a nuestro plugin
-									<br> example-container es el selector del contenedor
-								</p>
-								<img src="../assets/images/code1.png" alt="code1" class="img-fluid">
-							</div>
-						</div>
-					</div>
-					<div class="col-12 col-md-10 offset-md-1 p-3">
-						<div class="structure p-3">
-							<p>Al llamar la funcion cardify automaticamente empieza a ejecutar el siguiente codigo </p>
-							<img src="../assets/images/code.png" alt="code" class="img-fluid">
-						</div>
-					</div>
-				</div>
 		</section>
 	</main>
 
@@ -120,7 +103,7 @@
 		<div class="container-fluid">
 			<div class="row">
 				<div class="col-12 text-center">
-					<p>© 2018Cardify</p>
+					<p>© Cardify 2018</p>
 				</div>
 			</div>
 		</div>
@@ -128,6 +111,7 @@
 
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
 	<script src="../vendors/bootstrap/js/bootstrap.min.js"></script>
+	<script src="https://cdn.rawgit.com/google/code-prettify/master/loader/run_prettify.js"></script>
 	<script src="../js/app.js"></script>
 	<script src="../js/jquery.cardify.js"></script>
 </body>

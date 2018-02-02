@@ -2,25 +2,16 @@
   font-family: 'Nunito', sans-serif;
 }
 
-pre {
-  border: 5px solid rgba(5, 3, 151, 0.2);
+pre.prettyprint {
   border-radius: 4px;
-  color: rgb(15, 13, 13);
-  font-size: 14px;
-  padding: 5px 8px;
-  margin: 0 0 20px;
-  white-space: pre;
-  word-wrap: normal;
-  overflow-x: auto;
-  line-height: 24px;
-  background-color: rgba(223, 223, 76, 0.03);
-  font-weight: 100;
+  font-family: initial;
+  background-color: #f4f4f4;
+  padding: 5px !important;
 }
 
 .hero{
   background-color: #EF7B45;
   color: #fff;
-  padding: 30px 0;
 }
 
 .target{
@@ -36,6 +27,18 @@ pre {
 
 .second-title {
   color: #042A2B;
+}
+
+.btn-cardify-outline {
+  background-color: transparent;
+  border: 1px solid #34D1BF;
+  color: #042A2B;
+}
+
+.btn-cardify-outline:hover {
+  background-color: #34D1BF;
+  border: 1px solid transparent;
+  color: #fff;
 }
 
 .footer-bg {
