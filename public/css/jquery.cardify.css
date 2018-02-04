@@ -13,7 +13,7 @@
 .cardifyFigure{
   align-items: center;
   background-color: #f7f7f7;
-  box-shadow : #D8DAD5 8px 8px, #34D1BF -8px -8px, rgba(216, 216, 216, 0.7) -5px 5px 30px 10px;
+  /* box-shadow : #D8DAD5 8px 8px, #34D1BF -8px -8px, rgba(216, 216, 216, 0.7) -5px 5px 30px 10px; */
   border-radius: 5px;
   display: flex;
   flex-flow: column;
