@@ -13,7 +13,7 @@
 .cardifyFigure{
   align-items: center;
   background-color: #f7f7f7;
-  box-shadow : #D8DAD5 8px 8px, #34D1BF -8px -8px, rgba(216, 216, 216, 0.7) -5px 5px 30px 10px;
+  /* box-shadow : #D8DAD5 8px 8px, #34D1BF -8px -8px, rgba(216, 216, 216, 0.7) -5px 5px 30px 10px; */
   border-radius: 5px;
   display: flex;
   flex-flow: column;
@@ -38,6 +38,7 @@
 
 /* Estilos del figcaption */
 .cardifyFigcaption {
+  /* color: #3a7999; */
 	font-size: 1.2em;
   line-height : 1.2;
   opacity: 0;
@@ -51,9 +52,6 @@
 /* Estilos del ficaption en hover */
 .cardifyFigure:hover .cardifyFigcaption {
   opacity: 1;
-  background: rgba(182, 79, 79, 0);
-  color: #3a7999;
-  box-shadow: inset 0 0 0 3px #e96a16;
 }
 
 /* Breakpoints */
