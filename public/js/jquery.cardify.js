@@ -8,7 +8,6 @@
       captionsize: '1em',
       background: 'rgb(39, 177, 147)', 
       border: '5%'
-
     }, options);
 
     // Agregando estilos al contenedor
