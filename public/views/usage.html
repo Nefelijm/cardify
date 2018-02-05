@@ -25,23 +25,23 @@
 			 aria-label="Toggle navigation">
 				<span class="navbar-toggler-icon"></span>
 			</button>
-      <div class="collapse navbar-collapse" id="navbarNav">
-        <ul class="navbar-nav">
-          <li class="nav-item active">
-            <a class="nav-link" href="../index.html">Home
-            </a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="#">Uso
+			<div class="collapse navbar-collapse" id="navbarNav">
+				<ul class="navbar-nav">
+					<li class="nav-item active">
+						<a class="nav-link" href="../index.html">Home
+						</a>
+					</li>
+					<li class="nav-item">
+						<a class="nav-link" href="#">Uso
 							<span class="sr-only">(current)</span>
 						</a>
-          </li>
-        </ul>
-        <ul class="navbar-nav ml-auto">
-          <button id="btn-github" class="btn btn-outline-dark my-2 my-md-0">
-            <i class="fab fa-github"></i> Github</button>
-        </ul>
-      </div>
+					</li>
+				</ul>
+				<ul class="navbar-nav ml-auto">
+					<button id="btn-github" class="btn btn-outline-dark my-2 my-md-0">
+						<i class="fab fa-github"></i> Github</button>
+				</ul>
+			</div>
 		</nav>
 	</header>
 
@@ -72,6 +72,8 @@
 							<p>Los archivos que hay que tener en cuenta son:</p>
 							<pre class="prettyprint text-center"><code>jquery.cardify.css</code></pre>
 							<pre class="prettyprint text-center"><code>jquery.cardify.js</code></pre>
+							<P class="note">NOTA:</P>
+							<P>Para usar Carify es importante incluir jquery a tu proyecto</P>
 						</div>
 					</div>
 				</div>
@@ -91,9 +93,20 @@
 				<div class="col-12 col-md-10 offset-md-1 p-3">
 					<div class="target bg-light p-3">
 						<h3 class="second-title">¿Como invocar Cardify?</h3>
-						<p>
-							<code>.example-container</code> es el contenedor donde se encuentran las imágenes a ser procesadas.</p>
+						<p><code>.example-container</code> es el contenedor donde se encuentran las imágenes a ser procesadas.</p>
 						<pre class="prettyprint"><code>$('.example-container').cardify();</code></pre>
+					</div>
+				</div>
+				<div class="col-12 col-md-10 offset-md-1 p-3">
+					<div class="target bg-light p-3">
+						<h3 class="second-title">Opciones De Uso</h3>
+						<p><code>.example-container</code> es el contenedor donde se encuentran las imágenes a ser procesadas.Dentro del parentesis de carify le pasamos valores que deseamos modificar.</p>
+						<span>EJEMPLO:</span>
+						<pre class="prettyprint"><code>$('.example-container').cardify()({ boxColor: '#EF7B45', captionColor: 'white', captionsize: '2em', background: 'rgb(87, 155, 175)', border: '5%' });</code></pre>
+						<p> <strong>ANTES</strong>( Por default tienen estos estilos )</p>
+						<img src="../assets/images/before.png" alt="antes">
+						<p><strong>DESPUES</strong>( Al aplicar tus propios estilos )</p>
+						<img src="../assets/images/after.png" alt="despues">
 					</div>
 				</div>
 			</div>

@@ -13,7 +13,6 @@
 .cardifyFigure{
   align-items: center;
   background-color: #f7f7f7;
-  /* box-shadow : #D8DAD5 8px 8px, #34D1BF -8px -8px, rgba(216, 216, 216, 0.7) -5px 5px 30px 10px; */
   border-radius: 5px;
   display: flex;
   flex-flow: column;
@@ -34,19 +33,22 @@
 /* Estilos de la imagen en hover */
 .cardifyFigure:hover .cardifyImage {
   opacity: 0;
+  
+
 }
 
 /* Estilos del figcaption */
 .cardifyFigcaption {
   /* color: #3a7999; */
-	font-size: 1.2em;
+	/* font-size: 5em; */
   line-height : 1.2;
   opacity: 0;
   padding : 5% ;
   position : absolute;
   text-align : center ;
-  transition : opacity .5s;
+  transition : opacity 0.1s; 
   width : 90% ;
+
 }
 
 /* Estilos del ficaption en hover */

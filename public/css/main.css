@@ -50,3 +50,8 @@ pre.prettyprint {
   border-radius: 5px;
   box-shadow : rgba(216, 216, 216, 0.7) -5px 5px 25px 2px;
 }
+.note{
+  background-color: rgb(235, 129, 129);
+  width: 80px;
+  text-align: center;
+}
