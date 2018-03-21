@@ -1,6 +1,10 @@
-# Cardify
+# CARDIFY
 
 **Cardify** es un plugin de jQuery, flexbox y responsive. Dado un _contenedor de imágenes_, Cardify envuelve cada una de ellas en un nuevo elemento `<figure>` y añade un `<figcaption>` con el texto del atributo `alt` de la imagen.
+
+![image](https://user-images.githubusercontent.com/32304837/37690360-6655f952-2c78-11e8-8059-8ac251d7dfde.png)
+
+## Desarrollado para [Laboratoria](http://laboratoria.la)
 
 ## Flujo de trabajo
 
